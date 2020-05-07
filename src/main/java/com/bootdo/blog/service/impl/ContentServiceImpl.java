@@ -14,7 +14,7 @@ import com.bootdo.blog.service.ContentService;
 
 @Service
 public class ContentServiceImpl implements ContentService {
-	@Autowired
+	//@Autowired
 	private ContentDao bContentMapper;
 	
 	@Override
