@@ -104,7 +104,7 @@ public class ContentController extends BaseController {
 		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
 			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
 		}
-		bContent.setGtmCreate(new Date());
+		bContent.setGtmModified(new Date());
 		bContentService.update(bContent);
 		return R.ok();
 	}
